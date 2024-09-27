@@ -47,7 +47,7 @@ function shoppingCartReducer(state, action) {
             ...updatedItems[updatedItemIndex],
           };
     
-          updatedItem.quantity += action.payload.amound;
+          updatedItem.quantity += action.payload.amount;
     
           if (updatedItem.quantity <= 0) {
             updatedItems.splice(updatedItemIndex, 1);
